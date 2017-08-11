@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin1">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilEID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtEmployeeID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Employee ID"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilENAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin1">
+
+        <EditText
+            android:id="@+id/txtEmployeeName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Employee name"
+            android:inputType="text"
+            android:textSize="18sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtBirthDate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/margin1"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:text="Birth Date"
+        android:textSize="18sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilSALARY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin1">
+
+        <EditText
+            android:id="@+id/txtSalary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Salary"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding3"
+        android:layout_marginTop="@dimen/padding3"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
